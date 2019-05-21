@@ -1,0 +1,7 @@
+M:\ATIS\PRGSY\Praktikum\Sockets\Loesungen\DayTimeServer\obj\Debug\ResolveAssemblyReference.cache
+M:\ATIS\PRGSY\Praktikum\Sockets\Loesungen\DayTimeServer\bin\Debug\SimpleDayTimeServer.exe
+M:\ATIS\PRGSY\Praktikum\Sockets\Loesungen\DayTimeServer\bin\Debug\SimpleDayTimeServer.pdb
+M:\ATIS\PRGSY\Praktikum\Sockets\Loesungen\DayTimeServer\bin\Debug\Executor.dll
+M:\ATIS\PRGSY\Praktikum\Sockets\Loesungen\DayTimeServer\bin\Debug\Executor.pdb
+M:\ATIS\PRGSY\Praktikum\Sockets\Loesungen\DayTimeServer\obj\Debug\SimpleDayTimeServer.exe
+M:\ATIS\PRGSY\Praktikum\Sockets\Loesungen\DayTimeServer\obj\Debug\SimpleDayTimeServer.pdb

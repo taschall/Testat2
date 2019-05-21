@@ -1,0 +1,6 @@
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\FahrbefehlServer\bin\Debug\SimpleDayTimeServer.exe.config
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\FahrbefehlServer\bin\Debug\SimpleDayTimeServer.exe
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\FahrbefehlServer\bin\Debug\SimpleDayTimeServer.pdb
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\FahrbefehlServer\obj\Debug\DayTimeServer.csprojResolveAssemblyReference.cache
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\FahrbefehlServer\obj\Debug\SimpleDayTimeServer.exe
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\FahrbefehlServer\obj\Debug\SimpleDayTimeServer.pdb
