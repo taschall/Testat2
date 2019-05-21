@@ -1,0 +1,5 @@
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotHttpServer\bin\Debug\daten.txt
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotHttpServer\bin\Debug\RobotHttpServer.exe
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotHttpServer\bin\Debug\RobotHttpServer.pdb
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotHttpServer\obj\Debug\RobotHttpServer.exe
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotHttpServer\obj\Debug\RobotHttpServer.pdb
