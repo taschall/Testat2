@@ -23,7 +23,7 @@ namespace RobotFahrbefehlServer
             {
                 Console.WriteLine("Warte auf Verbindung auf Port " +
                     listen.LocalEndpoint + "...");
-                new Thread(new TimeHandler(listen.AcceptTcpClient()).Do).Start();
+                new Thread(new FahrbefehlHandler(listen.AcceptTcpClient()).Do).Start();
             }
         }
     }

@@ -1,0 +1,7 @@
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\bin\Debug\RobotFahrbefehlServer.exe
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\bin\Debug\RobotFahrbefehlServer.pdb
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\obj\Debug\RobotFahrbefehlServer.csprojResolveAssemblyReference.cache
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\obj\Debug\RobotFahrbefehlServer.Properties.Resources.resources
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\obj\Debug\RobotFahrbefehlServer.csproj.GenerateResource.Cache
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\obj\Debug\RobotFahrbefehlServer.exe
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\obj\Debug\RobotFahrbefehlServer.pdb
