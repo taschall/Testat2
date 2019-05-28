@@ -5,6 +5,8 @@ using System.Text;
 using System.Net.Sockets;
 using System.IO;
 using System.Collections;
+using Baymax.Control;
+using System.Threading;
 
 namespace RobotFahrbefehlServer
 {
@@ -32,10 +34,14 @@ namespace RobotFahrbefehlServer
         //}
 
         private ArrayList fahrbefehle = new ArrayList();  //Array um Fahrbefehle abzuspeichern
+        private ArrayList Encoder = new ArrayList();
+        //private ArrayList EncoderRight = new ArrayList();
+        private Robot robot;
 
         public FahrbefehlHandler(TcpClient client)
         {
             this.client = client;
+            robot = new Robot();
         }
 
         void ParseAndDrive()
@@ -44,8 +50,11 @@ namespace RobotFahrbefehlServer
             String value1;
             String value2 = null;
 
+            // enable driving
+            robot.Drive.Power = true;
+
             //parse Arraylist fahrbefehle
-            foreach(String element in fahrbefehle)
+            foreach (String element in fahrbefehle)
             {
                 // get first fahrbefehl
                 string s = element;
@@ -57,7 +66,7 @@ namespace RobotFahrbefehlServer
                 value1 = words[2];
 
                 // Check if 3 substrings exists
-                if(words.Length >= 2)
+                if (words.Length >= 2)
                 {
                     value2 = words[3];
                 }
@@ -65,68 +74,91 @@ namespace RobotFahrbefehlServer
                 {
                     value2 = null;
                 }
-                    
-
-            //String s = dataReceived;
-            //Char charRange = ' ';
-            //int startIndex = s.IndexOf(charRange);
-            //action = s.Substring(0, startIndex);
-            //int endIndex = s.LastIndexOf(charRange);
-            //if (endIndex == startIndex) { endIndex = s.Length; }
-            //int length = endIndex - startIndex;
-            //value1 = s.Substring(startIndex + 1, length - 1);
-            //if (endIndex != s.Length)
-            //{
-            //    startIndex = endIndex;
-            //    endIndex = s.Length;
-            //    length = endIndex - startIndex;
-            //    value2 = s.Substring(startIndex + 1, length - 1);
-            //}
 
 
-            float val1 = (float)System.Convert.ToDecimal(value1);
-            int val2 = System.Convert.ToInt32(value2);
+                //String s = dataReceived;
+                //Char charRange = ' ';
+                //int startIndex = s.IndexOf(charRange);
+                //action = s.Substring(0, startIndex);
+                //int endIndex = s.LastIndexOf(charRange);
+                //if (endIndex == startIndex) { endIndex = s.Length; }
+                //int length = endIndex - startIndex;
+                //value1 = s.Substring(startIndex + 1, length - 1);
+                //if (endIndex != s.Length)
+                //{
+                //    startIndex = endIndex;
+                //    endIndex = s.Length;
+                //    length = endIndex - startIndex;
+                //    value2 = s.Substring(startIndex + 1, length - 1);
+                //}
 
-            //void printit()
-            //{
-            //    Console.WriteLine(action);
-            //    Console.WriteLine("fValue1: " + val1); // Float
-            //    Console.WriteLine("iValue2: " + val2); // INTEGER
-            //}
 
-            if (action.Contains("TrackLine"))
-            {
-                Console.WriteLine("TrackLine");
-                //printit();
+                float val1 = (float)System.Convert.ToDecimal(value1);
+                int val2 = System.Convert.ToInt32(value2);
+
+                //void printit()
+                //{
+                //    Console.WriteLine(action);
+                //    Console.WriteLine("fValue1: " + val1); // Float
+                //    Console.WriteLine("iValue2: " + val2); // INTEGER
+                //}
+
+                if (action.Contains("TrackLine"))
+                {
+                    Console.WriteLine("TrackLine");
+                    // gerade aus fahren
+                    robot.Drive.RunLine(2.5f, 0.3f, 0.5f);
+                    //printit();
+                }
+                else if (action.Contains("TrackTurnLeft"))
+                {
+                    Console.WriteLine("TrackTurnLeft");
+                    //printit();
+                }
+                else if (action.Contains("TrackTurnRight"))
+                {
+                    Console.WriteLine("TrackTurnRight");
+                    //printit();
+                }
+                else if (action.Contains("TrackArcLeft"))
+                {
+                    Console.WriteLine("TrackArcLeft");
+                    //printit();
+                }
+                else if (action.Contains("TrackArcRight"))
+                {
+                    Console.WriteLine("TrackArcRight");
+                    //printit();
+                }
+                else if (action.Contains("Start"))
+                {
+                    Console.WriteLine("Start");
+                    //printit();
+                }
+
+                
+
+                //warten bis fertig gefahren
+                //while (!robot.Drive.Done)
+                //{
+                //    Thread.Sleep(200);
+
+                //}
             }
-            else if (action.Contains("TrackTurnLeft"))
-            {
-                Console.WriteLine("TrackTurnLeft");
-                //printit();
-            }
-            else if (action.Contains("TrackTurnRight"))
-            {
-                Console.WriteLine("TrackTurnRight");
-                //printit();
-            }
-            else if (action.Contains("TrackArcLeft"))
-            {
-                Console.WriteLine("TrackArcLeft");
-                //printit();
-            }
-            else if (action.Contains("TrackArcRight"))
-            {
-                Console.WriteLine("TrackArcRight");
-                //printit();
-            }
-            else if (action.Contains("Start"))
-            {
-                Console.WriteLine("Start");
-                //printit();
-            }
 
-          }
+            // write array with encoder data to file
+            WriteFile();
+        }
 
+        public void WriteFile()
+        {
+            FileStream fs = new FileStream("daten.txt", FileMode.Create);
+            StreamWriter sw = new StreamWriter(fs);
+            foreach(float encoder in Encoder)
+            {
+                sw.WriteLine(encoder);
+            }
+            sw.Close();
         }
 
         public void Do()
