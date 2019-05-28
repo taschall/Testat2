@@ -4,3 +4,9 @@ C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Robo2\Ba
 C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Robo2\Baymax.IO\obj\Debug\Baymax.IO.csprojResolveAssemblyReference.cache
 C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Robo2\Baymax.IO\obj\Debug\Baymax.IO.dll
 C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Robo2\Baymax.IO\obj\Debug\Baymax.IO.pdb
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\Baymax.IO\bin\Debug\Lib\GPIOLib.dll
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\Baymax.IO\bin\Debug\Baymax.IO.dll
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\Baymax.IO\bin\Debug\Baymax.IO.pdb
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\Baymax.IO\obj\Debug\Baymax.IO.csprojResolveAssemblyReference.cache
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\Baymax.IO\obj\Debug\Baymax.IO.dll
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\Baymax.IO\obj\Debug\Baymax.IO.pdb

@@ -3,3 +3,8 @@ C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Robo2\Ba
 C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Robo2\Baymax.Control\obj\Debug\Baymax.Control.csprojResolveAssemblyReference.cache
 C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Robo2\Baymax.Control\obj\Debug\Baymax.Control.dll
 C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Robo2\Baymax.Control\obj\Debug\Baymax.Control.pdb
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\Baymax.Control\bin\Debug\Baymax.Control.dll
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\Baymax.Control\bin\Debug\Baymax.Control.pdb
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\Baymax.Control\obj\Debug\Baymax.Control.csprojResolveAssemblyReference.cache
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\Baymax.Control\obj\Debug\Baymax.Control.dll
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\Baymax.Control\obj\Debug\Baymax.Control.pdb
