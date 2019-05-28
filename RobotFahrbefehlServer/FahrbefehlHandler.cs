@@ -107,27 +107,31 @@ namespace RobotFahrbefehlServer
                 {
                     Console.WriteLine("TrackLine");
                     // gerade aus fahren
-                    robot.Drive.RunLine(2.5f, 0.3f, 0.5f);
+                    robot.Drive.RunLine(val1, 0.3f, 0.5f);
                     //printit();
                 }
                 else if (action.Contains("TrackTurnLeft"))
                 {
                     Console.WriteLine("TrackTurnLeft");
+                    robot.Drive.RunTurn(-val1, 0.3f, 0.5f);
                     //printit();
                 }
                 else if (action.Contains("TrackTurnRight"))
                 {
                     Console.WriteLine("TrackTurnRight");
+                    robot.Drive.RunTurn(val1, 0.3f, 0.5f);
                     //printit();
                 }
                 else if (action.Contains("TrackArcLeft"))
                 {
                     Console.WriteLine("TrackArcLeft");
+                    robot.Drive.RunArcRight(val2, val1, 0.3f, 0.5f);
                     //printit();
                 }
                 else if (action.Contains("TrackArcRight"))
                 {
                     Console.WriteLine("TrackArcRight");
+                    robot.Drive.RunArcRight(val2, -val1, 0.3f, 0.5f);
                     //printit();
                 }
                 else if (action.Contains("Start"))
@@ -136,15 +140,17 @@ namespace RobotFahrbefehlServer
                     //printit();
                 }
 
-                
-
                 //warten bis fertig gefahren
-                //while (!robot.Drive.Done)
-                //{
-                //    Thread.Sleep(200);
+                while (!robot.Drive.Done)
+                {
+                    Thread.Sleep(200);
+                    Encoder.Add(robot.Drive.DriveInfo.DistanceL + "," + robot.Drive.DriveInfo.DistanceR);
 
-                //}
+                }
             }
+
+            // Roboter stoppen
+            robot.Drive.Stop();
 
             // write array with encoder data to file
             WriteFile();
@@ -171,7 +177,7 @@ namespace RobotFahrbefehlServer
                 string line;
                 using (StreamReader sr = new StreamReader(client.GetStream()))
                 {
-                    Console.WriteLine("Starten mit Empfangen Fahrbefehle");
+                    Console.WriteLine("Starten mit empfangen Fahrbefehle");
 
                     while ((line = sr.ReadLine()) != null)
                     {
