@@ -48,7 +48,7 @@ namespace RobotFahrbefehlServer
         {
             String action;
             String value1;
-            String value2 = null;
+            String value2 = "";
 
             // enable driving
             robot.Drive.Power = true;
@@ -72,7 +72,7 @@ namespace RobotFahrbefehlServer
                 }
                 else
                 {
-                    value2 = null;
+                    value2 = "";
                 }
 
 
@@ -94,7 +94,12 @@ namespace RobotFahrbefehlServer
 
 
                 float val1 = (float)System.Convert.ToDecimal(value1);
-                int val2 = System.Convert.ToInt32(value2);
+                int val2 = 0;
+                if (value2 != "")
+                {
+                    val2 = System.Convert.ToInt32(value2);
+                }
+
 
                 //void printit()
                 //{
@@ -144,12 +149,13 @@ namespace RobotFahrbefehlServer
                 while (!robot.Drive.Done)
                 {
                     Thread.Sleep(200);
-                    Encoder.Add(robot.Drive.DriveInfo.DistanceL + "," + robot.Drive.DriveInfo.DistanceR);
+                    Encoder.Add(robot.Drive.DriveInfo.DistanceL + ";" + robot.Drive.DriveInfo.DistanceR);
 
                 }
             }
 
             // Roboter stoppen
+            Console.WriteLine("Stop");
             robot.Drive.Stop();
 
             // write array with encoder data to file
@@ -160,7 +166,7 @@ namespace RobotFahrbefehlServer
         {
             FileStream fs = new FileStream("daten.txt", FileMode.Create);
             StreamWriter sw = new StreamWriter(fs);
-            foreach(float encoder in Encoder)
+            foreach (String encoder in Encoder)
             {
                 sw.WriteLine(encoder);
             }

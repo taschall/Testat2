@@ -30,7 +30,8 @@ namespace SimpleHttpServer {
                 }
                 try {
                     String theData;
-                    String filename = @"Temp\RobotHttpServer\daten.txt";
+                    //String filename = @"Temp\RobotHttpServer\daten.txt";
+                    String filename = @"daten.txt";
                     using (StreamReader file = new StreamReader(filename)) {
                         theData = file.ReadToEnd();
                     }
