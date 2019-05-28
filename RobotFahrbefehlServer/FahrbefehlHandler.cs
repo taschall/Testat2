@@ -62,13 +62,13 @@ namespace RobotFahrbefehlServer
                 // split string into sub strings
                 string[] words = s.Split(' ');
 
-                action = words[1];
-                value1 = words[2];
+                action = words[0];
+                value1 = words[1];
 
                 // Check if 3 substrings exists
-                if (words.Length >= 2)
+                if (words.Length >= 3)
                 {
-                    value2 = words[3];
+                    value2 = words[2];
                 }
                 else
                 {
@@ -171,8 +171,11 @@ namespace RobotFahrbefehlServer
                 string line;
                 using (StreamReader sr = new StreamReader(client.GetStream()))
                 {
+                    Console.WriteLine("Starten mit Empfangen Fahrbefehle");
+
                     while ((line = sr.ReadLine()) != null)
                     {
+                        Console.WriteLine("Empfange: " + line);
 
                         if (line.Contains("Start"))
                         {

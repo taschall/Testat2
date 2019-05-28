@@ -5,3 +5,8 @@ C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\
 C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\obj\Debug\RobotFahrbefehlServer.csproj.GenerateResource.Cache
 C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\obj\Debug\RobotFahrbefehlServer.exe
 C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\obj\Debug\RobotFahrbefehlServer.pdb
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\bin\Debug\Lib\GPIOLib.dll
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\bin\Debug\Baymax.Control.dll
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\bin\Debug\Baymax.IO.dll
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\bin\Debug\Baymax.Control.pdb
+C:\Users\domis\Documents\Dominik\Fachhochschule\8_Semester\CSA\Projekte\Testat2\RobotFahrbefehlServer\bin\Debug\Baymax.IO.pdb

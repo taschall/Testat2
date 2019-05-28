@@ -64,6 +64,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Baymax.Control\Baymax.Control.csproj">
+      <Project>{FFBE1F23-1963-43A2-A7DF-8BCCEE879FAA}</Project>
+      <Name>Baymax.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Baymax.IO\Baymax.IO.csproj">
+      <Project>{2C3E57E0-2378-46DD-8508-B5CFCE1C4452}</Project>
+      <Name>Baymax.IO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkTargetsVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
