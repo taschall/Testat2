@@ -1,0 +1,7 @@
+C:\Users\Manuel\source\repos\Client\Client_Stream\bin\Debug\Client_Stream.exe.config
+C:\Users\Manuel\source\repos\Client\Client_Stream\bin\Debug\Client_Stream.exe
+C:\Users\Manuel\source\repos\Client\Client_Stream\bin\Debug\Client_Stream.pdb
+C:\Users\Manuel\source\repos\Client\Client_Stream\obj\Debug\Client_Stream.csprojAssemblyReference.cache
+C:\Users\Manuel\source\repos\Client\Client_Stream\obj\Debug\Client_Stream.csproj.CoreCompileInputs.cache
+C:\Users\Manuel\source\repos\Client\Client_Stream\obj\Debug\Client_Stream.exe
+C:\Users\Manuel\source\repos\Client\Client_Stream\obj\Debug\Client_Stream.pdb
